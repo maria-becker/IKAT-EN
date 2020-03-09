@@ -1,0 +1,11 @@
+TEXT	ADJACENT?	ARGUMENTATIVE RELATION	NUMBER OF INSERTED SENTENCES	SEMANTIC CLAUSE TYPE	CN RELATION	MISSING INFORMATION 1	SEMANTIC CLAUSE TYPE 1	CN RELATIONS 1	MISSING INFORMATION 2	SEMANTIC CLAUSE TYPE 2	CN RELATIONS 2	MISSING INFORMATION 3	SEMANTIC CLAUSE TYPE 3	CN RELATIONS 3	MISSING INFORMATION 4	SEMANTIC CLAUSE TYPE 4	CN RELATIONS 4	MISSING INFORMATION 5	SEMANTIC CLAUSE TYPE 5	CN RELATIONS 5
+e1: Energy saving light bulbs contain a significant amount of toxins.				GENERIC	significant amount of toxins, energy saving light bulbs (PartOf)/energy saving light bulbs, significant amounts of toxins (HasA)															
+e2: A commercially available bulb may contain for example up to five milligrams of mercury.				GENERIC	commercially available bulb, up to five milligrams of mercury (HasA)/up to five milligrams of mercury, commercially available bulb (PartOf)															
+e3: That's why they should be taken off the market,				GENERIC	energy saving light bulbs, taken off the market (ReceivesAction)															
+e4: unless they're unbreakable.				GENERIC	energy saving light bulbs, unbreakable (HasProperty)/not take energy saving light bulbs off the market, be unbreakable (HasPrerequisite)/take energy saving light bulbs off the market, be unbreakable (ObstructedBy)															
+e5: But precisely this is unfortunately not the case.				GENERIC																
+e1-e3	not adjacent	sup	1			What contains toxins should be withdrawn from the market.	GENERIC	what contains toxins, withdrawn from the market (ReceivesAction)/toxins, withdrawn from the market (ReceivesAction)												
+e2-e1	adjacent	exa	1			Mercury contains toxins.	STATE	mercury, contain toxins (CapableOf)/toxins, mercury (PartOf)/mercury, toxins (MadeOf)												
+e4-e3	adjacent	und	0																	
+e5-e4	adjacent	reb	0																	
+e2-e3	adjacent	NONE	2			What contains mercury should be taken off the market.	GENERIC	what contains toxins, taken off the market (ReceivesAction)/toxins, taken off the market (ReceivesAction)	What is commercially available is on the market.	GENERIC	what is commercially available, on market (HasProperty)/being commercially available, being on the market (DefinedAs)/being on the market, being commercially available (DefinedAs)									

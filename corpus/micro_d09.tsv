@@ -1,0 +1,11 @@
+TEXT	ADJACENT?	ARGUMENTATIVE RELATION	NUMBER OF INSERTED SENTENCES	SEMANTIC CLAUSE TYPE	CN RELATION	MISSING INFORMATION 1	SEMANTIC CLAUSE TYPE 1	CN RELATIONS 1	MISSING INFORMATION 2	SEMANTIC CLAUSE TYPE 2	CN RELATIONS 2	MISSING INFORMATION 3	SEMANTIC CLAUSE TYPE 3	CN RELATIONS 3	MISSING INFORMATION 4	SEMANTIC CLAUSE TYPE 4	CN RELATIONS 4	MISSING INFORMATION 5	SEMANTIC CLAUSE TYPE 5	CN RELATIONS 5
+e1: You should watch less television,				STATE	you, watch less television (CapableOf)															
+e2: as too much TV makes you stupid in the long run,				GENERIC	too much TV, making you stupid (Causes)/too much TV, making you stupid (CapableOf)															
+e3: like your brother.				N.A.	brother, stupid (HasProperty)/you, brother (HasA)/you, like your brother (HasProperty)															
+e4: It would be an exception if you only watched quiz shows,				STATE/GENERALIZING	you, watch less television (CapableOf)															
+e5: but you tend to watch Big Brother and X-Diaries.				GENERALIZING	you, watch Big Brother (CapableOf)/you, watch X-Diaries (CapableOf)															
+e2-e1	adjacent	sup	0																	
+e3-e2	adjacent	exa	0																	
+e4-e1	not adjacent	und	3			Television does not educate.	GENERIC	television, educate (NotCapableOf)/television, education (NotUsedFor)	Quiz shows on television can educate.	GENERIC	quiz shows, television (AtLocation)/quiz shows, educate (CapableOf)/quiz shows, education (UsedFor)/television, educate (CapableOf)/television, education (UsedFor)	Education is desirable.	GENERIC	education, desirable (HasProperty)						
+e5-e4	adjacent	reb	2			BigBrother and X-Diaries are not educational television programs.	STATE	BBigBrother, television programs (IsA)/X-Diaries, television programs (IsA)/Big Brother, educational (NotHasProperty)/Big Brother, educational television programs (NotIsA)/Big Brother, educational television programs (NotPartOf)/X-Diaries, educational (NotHasProperty)/X-Diaries, educational television programs (NotIsA)/X-Diaries, educational television programs (NotPartOf)	Quiz shows are educational television programs.	GENERIC	quiz shows, educational television programs (IsA)/quiz shows, educational television programs (PartOf)/quiz shows, educational (HasProperty)									
+e3-e4	adjacent	NONE	0																	
