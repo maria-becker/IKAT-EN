@@ -1,0 +1,13 @@
+TEXT	ADJACENT?	ARGUMENTATIVE RELATION	NUMBER OF INSERTED SENTENCES	SEMANTIC CLAUSE TYPE	CN RELATION	MISSING INFORMATION 1	SEMANTIC CLAUSE TYPE 1	CN RELATIONS 1	MISSING INFORMATION 2	SEMANTIC CLAUSE TYPE 2	CN RELATIONS 2	MISSING INFORMATION 3	SEMANTIC CLAUSE TYPE 3	CN RELATIONS 3	MISSING INFORMATION 4	SEMANTIC CLAUSE TYPE 4	CN RELATIONS 4	MISSING INFORMATION 5	SEMANTIC CLAUSE TYPE 5	CN RELATIONS 5
+e1: Tomorrow I will skydive for the first time in my life.				STATE	I, skydive (CapableOf)															
+e2: Yes, there is a certain risk to life.				GENERIC	skydive, risk to live (HasA)/skydive, risk to live (IsA)/skydive, risk to live (Causes)															
+e3: But I want to experience this incredible moment of freedom that skydivers report time and again.				STATE/GENERIC	I, experience moment of freedom (CapableOf)/moment of freedom, incredible (HasProperty)/skydivers, report moment of freedom (CapableOf)/skydivers, moment of freedom (HasA)/skydivers, experience a moment of freedom (CapableOf)/moment of freedom, experienced (ReceivesAction)/moment of freedom, reported (ReceivesAction)															
+e4: Besides, Jochen was given a parachute jump the other day as a gift,				EVENT	Jochen, given parachute jump (ReceivesAction)/parachute jump, gift (IsA)/Jochen, parachute jump (HasA)/Jochen, parachute jump (CapableOf)															
+e5: and it mustn't be that this wannabe-adventurer has one up on me.				STATE/STATE	wannabe-adventurer, one up on me (NotHasA)/wannabe-adventurer, having one up on me (NotHasProperty)															
+e2-e1	adjacent	reb	0																	
+e3-e1	not adjacent	sup	1			Skydiving is a moment of freedom.	STATE	skydiving, moment of freedom (IsA)/Skydiving, moment of freedom (Causes)/moment of freedom, skydiving (CreatedBy)/skydiving, moment of freedom (UsedFor)												
+e4-e1	not adjacent	sup	0																	
+e5-e1	not adjacent	add	1			Skydiving is an adventure.	STATE	skydiving, adventure (IsA)												
+e2-e3	adjacent	NONE	1			Skydiving is a risk to life.	STATE	skydiving, risk to life (IsA)/skydiving, risk to life (Causes)/skydiving, risk to live (HasA)												
+e3-e4	adjacent	NONE	2			Skydivers do parachute jumps.	GENERIC	skydiving, parachute jump (IsA)/skydivers, do parachute jump (CapableOf)	Parachute jumps give you a feeling of freedom.	GENERIC	parachute jumps, feeling of freedom (Causes)/feeling of freedom, doing parachute jumps (CreatedBy)/parachute jumps, feeling of freedom (UsedFor)/parachute jumps, give you a feeling of freedom (CapableOf)									
+e4-e5	adjacent	NONE	1			Parachute jumps are an adventure.	GENERIC	parachute jumps, adventure (IsA)												

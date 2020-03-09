@@ -1,0 +1,11 @@
+TEXT	ADJACENT?	ARGUMENTATIVE RELATION	NUMBER OF INSERTED SENTENCES	SEMANTIC CLAUSE TYPE	CN RELATION	MISSING INFORMATION 1	SEMANTIC CLAUSE TYPE 1	CN RELATIONS 1	MISSING INFORMATION 2	SEMANTIC CLAUSE TYPE 2	CN RELATIONS 2	MISSING INFORMATION 3	SEMANTIC CLAUSE TYPE 3	CN RELATIONS 3	MISSING INFORMATION 4	SEMANTIC CLAUSE TYPE 4	CN RELATIONS 4	MISSING INFORMATION 5	SEMANTIC CLAUSE TYPE 5	CN RELATIONS 5
+e1: Freddy and I must be siblings.				STATE	Freddy and I, siblings (IsA)/Freddy, sibling (IsA)/I, sibling (IsA)															
+e2: We both have the exact same two moles on our left arm				STATE	we, moles (HasA)/moles, left arm (AtLocation)/both, same moles (HasA)/moles, left arm (AtLocation)															
+e3: and you only get that with siblings.				GENERIC	have the same moles, be siblings (HasPrerequisite)/siblings, same moles (HasA)															
+e4: My parents say this could also be pure coincidence.				ABSTRACT ENTITY	have the same moles, coincidence (IsA)/coincidence, have the same moles (Causes)															
+e5: But that much of a coincidence is simply impossible.				GENERIC	coincidence, impossible (HasProperty)															
+e2-e1	adjacent	sup	2			Siblings have very similar genes.	GENERIC	siblings, genes (HasA)/genes, similar (HasProperty)/siblings, similar genes (HasA)	Moles are dependent on the genes	GENERIC	moles, dependent on genes (HasProperty)/genes, moles (Causes)									
+e3-e1	not adjacent	add	0																	
+e4-e3	adjacent	reb	0																	
+e5-e4	adjacent	reb	2			Coincidence is conditioned by probability.	GENERIC	coincidence, conditioned (ReceivesAction)/probability, conditions (CapableOf)/coincidence, probability (PartOf)/coincidence, conditioned by probability (HasProperty)	Much coincidence is not probable.	GENERIC	coincidence, probable (NotHasProperty)									
+e2-e3	adjacent	NONE	2			Siblings have very similar genes.	GENERIC	siblings, genes (HasA)/genes, similar (HasProperty)/siblings, similar genes (HasA)	Moles are dependent on the genes.	GENERIC	moles, dependent (HasProperty)/genes, moles (Causes)/genes, moles (Causes)									
