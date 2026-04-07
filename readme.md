@@ -1,7 +1,37 @@
 # **Implicit Knowledge in Argumentative Texts: An Annotated Corpus (IKAT-EN)**
 
-**LREC 2020**  
-Maria Becker, Katharina Korfhage, Anette Frank  
+**Maria Becker, Katharina Korfhage, Anette Frank**  
+
+[![Paper](https://img.shields.io/badge/Paper-LREC%202020-blue)](https://aclanthology.org/2020.lrec-1.282/)  
+[![Dataset](https://img.shields.io/badge/Type-Annotated%20Corpus-orange)]()  
+
+---
+
+## 📄 Paper
+
+**Implicit Knowledge in Argumentative Texts: An Annotated Corpus**  
+Proceedings of the **12th Language Resources and Evaluation Conference (LREC 2020)**, Marseille, France  
+
+👉 https://aclanthology.org/2020.lrec-1.282/  
+📄 PDF: https://aclanthology.org/2020.lrec-1.282.pdf  
+
+---
+
+## 📚 Citation
+
+If you use **IKAT-EN** in your research, please cite:
+
+```bibtex
+@inproceedings{becker-etal-2020-ikat,
+  title     = {Implicit Knowledge in Argumentative Texts: An Annotated Corpus},
+  author    = {Becker, Maria and Korfhage, Katharina and Frank, Anette},
+  booktitle = {Proceedings of the 12th Language Resources and Evaluation Conference (LREC)},
+  year      = {2020},
+  pages     = {2316--2324},
+  address   = {Marseille, France},
+  publisher = {European Language Resources Association}
+}
+```
 
 ---
 
@@ -17,8 +47,7 @@ To learn more about the characteristics of both the argumentative texts and the 
 
 The outcome of our work is a carefully designed and richly annotated dataset, the **IKAT-EN corpus**.  
 
-An in-depth analysis of characteristic distributions and correlations of the assigned labels can be found in our paper:  
-Becker, M., Korfhage, K., and Frank, A. (2020): *Implicit Knowledge in Argumentative Texts: An Annotated Corpus*. Proceedings of LREC. Marseille, France.  
+An in-depth analysis of characteristic distributions and correlations of the assigned labels can be found in our paper.  
 
 > ⚠️ Please cite this paper when using IKAT-EN.
 
@@ -81,6 +110,7 @@ The annotation was performed by:
 We provide **one TSV file per microtext**, structured as follows:
 
 ### Argumentative Units
+
 - First lines display the argumentative units (`e-1` to `e-n`)  
 - One line per unit  
 - Each unit includes:
@@ -88,11 +118,14 @@ We provide **one TSV file per microtext**, structured as follows:
   - ConceptNet relations (GOLD version)  
 
 **Notes:**
+
 - Multiple clauses → separated by `/`  
   - Example: `STATE/GENERIC`  
+
 - ConceptNet relations format:  
   - `concept1, concept2 (relation)`  
   - Example: `dog owners, negligent (HasProperty)`  
+
 - Multiple relations → separated by `/`  
 
 ---
