@@ -13,7 +13,7 @@
 Proceedings of the **12th Language Resources and Evaluation Conference (LREC 2020)**, Marseille, France  
 
 👉 https://aclanthology.org/2020.lrec-1.282/  
-📄 PDF: https://aclanthology.org/2020.lrec-1.282.pdf  
+
 
 ---
 
